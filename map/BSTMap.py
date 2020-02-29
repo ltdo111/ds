@@ -10,6 +10,9 @@
 
 
 class Node:
+    """
+    定义了key->val 键值对
+    """
     def __init__(self, key=None, val=None, left=None, right=None):
         self.key = key
         self.val = val

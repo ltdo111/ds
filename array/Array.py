@@ -69,6 +69,13 @@ class Array:
             new_data[i] = self._data[i]
         self._data = new_data
 
+    def swap(self, i, j):
+        if i < 0 or i >= self._size or j < 0 or j >= self._size:
+            raise (Exception, 'index is illegal!')
+        tmp = self._data[i]
+        self._data[i] = self._data[j]
+        self._data[j] = tmp
+
     def to_string(self):
         res_str_arr = []
         res_str_arr.append('Array: size = %d, capacity = %d; ' % (self._size, len(self._data)))

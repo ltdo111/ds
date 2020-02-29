@@ -154,7 +154,7 @@ class BST:
 
     def in_order(self):
         """
-        中序遍历，即是二分搜索树从小到达排序的数据
+        中序遍历，即是二分搜索树从小到大排序的数据
         :return:
         """
         self._in_order(self._root)

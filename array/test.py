@@ -9,6 +9,6 @@
 """
 
 if __name__ == '__main__':
-    a = [None] * 10
-    a[2] = 3
-    print(a)
+    tmp = [1, 2, 3, 4]
+    for i in range(3, -1, -1):
+        print(tmp[i])
